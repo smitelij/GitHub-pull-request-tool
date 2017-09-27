@@ -8,7 +8,7 @@
 var client = require('./GraphQLClient');
 
 /** User authentication token **/
-var token = '8639a0bd1bf3034e358f4aa75076219b0b5accb6';
+var token = '901dcdf2177e6db355d3b03433cb4ea7ca3c0c96';
 
 //Base queries used to contact API
 var queryReposBase = '{ organization(login:"lodash"){ repositories(first:100 after:"%x"){ totalCount edges { node { ';

@@ -36,13 +36,13 @@ module.exports = {
 		* receive results of HTTP
 		**/ 
 		function postRequest(error, response, body) {
-				if (!error && response.statusCode == 200) {
-					callback(body);
-				} else {
-					console.log('Unable to receive response.')
-					console.log('Error: ' + error);
-					console.log('Status Message: ' + response.statusMessage);
-				}
+			if (!error && response.statusCode == 200) {
+				callback(body);
+			} else {
+				console.log('Unable to receive response.')
+				console.log('Error: ' + error);
+				console.log('Status Message: ' + response.statusMessage);
+			}
 		}
 	}
 	
